@@ -24,7 +24,7 @@ import ast
 # Core method
 def work(request,task_id):
     num_users = UserProfile.objects.count();
-    if num_users >= 50:
+    if num_users >= 60:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "giving !!!!!!"
     # Some user management with mturk
@@ -44,6 +44,7 @@ def work(request,task_id):
                 user = authenticate(username=workerId, password="cool")
                 login(request, user)
                 user_profile = UserProfile.objects.create(user=request.user)
+                user_profile.exp_type =  (user_profile.id % 3) +1
                 user_profile.save()
         else:
             print "new without id"
@@ -54,108 +55,79 @@ def work(request,task_id):
     if task_id == None:
         return render_to_response('error.html', context_instance=RequestContext(request))
 
-    # this is by default ..
-    batch = Batch.objects.get(id=1)
     # get the user profile
     try:
         user_profile = UserProfile.objects.get(user=request.user)
-        print user_profile.credit, user_profile.user.username
     except UserProfile.DoesNotExist:
         return HttpResponseRedirect(reverse('login_view'))
 
-    ## Create the vector of performance
-    data = []
-    last= 0 
-    prev= 0
-    avg_data = 0
-    max_data = 0
-    upside = True
-    BASE_PAY = batch.value
-    tasks = TaskSubmit.objects.filter(user=request.user).order_by('starttime')
-    # FOR THE MODEL
-    last_bonus = 0.0202 #asc
-    # last_bonus = 0.0712 #desc
-    # last_bonus = 0.04 #uni
-    print tasks
-    for t in tasks:
-        if t.elapsed > 0:
-            print t
-            last = round((3600*(t.bonus+BASE_PAY))/t.elapsed,2)
-            if last > prev:
-                upside = True
+    print user_profile.id, "YOHO"
+    # Get the batch:
+    tuser = user_profile.exp_type 
+    last_batch = user_profile.last_batch
+    last_batch_seen = user_profile.last_batch_seen
+    batch_to_run = 0
+    
+    if tuser == 1: # This guy switches ABABABAB
+        if last_batch == 1:
+            batch_to_run = 2
+        else:
+            batch_to_run = 1
+        user_profile.last_batch_seen = 0
+        user_profile.save()
+    elif tuser == 2: # This guy does AAAABBBB
+        if last_batch_seen >= 10:
+            if last_batch == 1:
+                batch_to_run = 2
             else:
-                upside = False
-            prev = last
-            data.append(last)
-            #FOR THE MODEL
-            last_bonus = t.bonus 
-    if len(data) >0 :
-        avg_data= round(sum(data)/len(data),2)
-        max_data = round(max(data))
-    data = data[-50:]
-    print data
-    data = ','.join([str(item) for item in data])
-    print data
+                batch_to_run = 1
+            user_profile.last_batch_seen = 0
+            user_profile.save()
+        else: 
+            batch_to_run = last_batch
+    else: 
+        if last_batch_seen >= 25:
+            if last_batch == 1:
+                batch_to_run = 2
+            else:
+                batch_to_run = 1
+            user_profile.last_batch_seen = 0
+            user_profile.save()
+        else: 
+            batch_to_run = last_batch
+
+    batch = Batch.objects.get(id = batch_to_run)
+
+    print "Running batch:", batch, batch.bclass
 
     if assignmentId == "ASSIGNMENT_ID_NOT_AVAILABLE":
-        return render_to_response('accept.html', {'user_profile':user_profile, 'data': data, 'batch': batch,
-            'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside}, context_instance=RequestContext(request))
+        return render_to_response('accept.html', {'user_profile':user_profile, 'batch': batch}, context_instance=RequestContext(request))
 
     # get the task
     from django.db import IntegrityError
-    task = get_object_or_404(Task, pk=task_id)
+    task = random.choice(Task.objects.filter(batch=batch))
     try: 
         assigned, created= TaskSubmit.objects.get_or_create(user=request.user,task=task, elapsed=0)
     except IntegrityError as e:
-        return render_to_response('done.html', {'user_profile':user_profile, 'data': data, 'batch': batch,
-            'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside}, context_instance=RequestContext(request))
+        return render_to_response('done.html', {'user_profile':user_profile}, context_instance=RequestContext(request))
 
-    ## Run some model and assign the bonus !!
-    # 1) do it constant :
-    print assigned, assigned.id
-    # FOR THE MODEL
-    # Asc:
-    bonus = last_bonus - 0.0004
-    # Desc: bonus = last_bonus + 0.0012
-    # Uniform: 
-    # bonus = 0.03
+    print "Working on:", task
 
-    assigned.bonus = bonus
-    assigned.save()
-    print "assigned price:", assigned.bonus
+    # user_profile.last_batch = task.batch.id
+    # user_profile.last_batch_seen += 1
+    # user_profile.save()
 
-    # Generate the next task and send it to the work:
-    if batch.bclass == "imgcompare":
-        img1, img2 = task.question.split(',')
-        return render_to_response('celebrities.html', {'user_profile':user_profile,'task':task, 'img1':img1, 'img2': img2, 'bonus': bonus,
-                'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch},
-                    context_instance=RequestContext(request))
-    elif batch.bclass == "imgcompare_multi":
-        print task.id, "!!!!!!", task.question
-        # items = ast.literal_eval(task.question)
-        items = task.question.split(',');
-        print "Items Set: ", items
-        item = items[0]
-        items = items[1:]
-        return render_to_response('celebrities_multi.html', {'user_profile':user_profile, 'task':task, 'item':item, 'items':items, 'bonus': bonus,
-            'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch}, 
-            context_instance=RequestContext(request))
-    elif batch.bclass == "er_multi":
+    # Generate the next task and send it to the worker:
+    if batch.bclass == "er_multi":
         print task.id, "!!!!!!", task.question
         items = ast.literal_eval(task.question)
         print "Items Set: ", items
         item = items[0]
         items = items[1:]
-        return render_to_response('er.html', {'user_profile':user_profile, 'task':task, 'item':item, 'items':items, 'bonus': bonus,
-            'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch}, 
-            context_instance=RequestContext(request))
-    elif batch.bclass == "data":
-        return render_to_response('task.html', {'user_profile':user_profile, 'task':task, 'bonus': bonus,  
-            'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch}, 
+        return render_to_response('er.html', {'user_profile':user_profile, 'task':task, 'item':item, 'items':items, 'batch':batch}, 
             context_instance=RequestContext(request))
     elif batch.bclass == "classify":
-        return render_to_response('flies.html', {'user_profile':user_profile, 'task':task, 'bonus': bonus,  
-            'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch}, 
+        return render_to_response('flies.html', {'user_profile':user_profile, 'task':task, 'batch':batch}, 
             context_instance=RequestContext(request))
     else:
         return render_to_response('error.html', {'user_profile':user_profile}, context_instance=RequestContext(request))
@@ -187,12 +159,14 @@ def submit(request, task_id):
     tasksubmit.save()
     user_profile = UserProfile.objects.get(user=request.user)
     user_profile.credit = user_profile.credit + tasksubmit.bonus
+    user_profile.last_batch = task.batch.id
+    user_profile.last_batch_seen += 1
     user_profile.save()
     return HttpResponse('', mimetype="application/javascript")
 
 def welcome(request):
     num_users = UserProfile.objects.count();
-    if num_users >= 50:
+    if num_users >= 60:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "welcome ! "
     batch = Batch.objects.get(id=1)

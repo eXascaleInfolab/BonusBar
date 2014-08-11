@@ -19,7 +19,7 @@ class BatchAdmin(admin.ModelAdmin):
         return super(BatchAdmin, self).formfield_for_choice_field(db_field, request, **kwargs)
 
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display=('user','credit','score')
+    list_display=('user','credit','score', 'exp_type' , 'last_batch','last_batch_seen')
 
 
 class TaskSubmitAdmin(admin.ModelAdmin):

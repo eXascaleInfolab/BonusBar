@@ -20,7 +20,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm032.jpg",
+      "question": "adm032.jpg",
       "choice": ""
     }
   },
@@ -29,7 +29,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno037.jpg",
+      "question": "mno037.jpg",
       "choice": ""
     }
   },
@@ -38,7 +38,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "black_swallowtail/swa037.jpg",
+      "question": "swa037.jpg",
       "choice": ""
     }
   },
@@ -47,7 +47,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm031.jpg",
+      "question": "adm031.jpg",
       "choice": ""
     }
   },
@@ -56,7 +56,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea016.jpg",
+      "question": "pea016.jpg",
       "choice": ""
     }
   },
@@ -65,7 +65,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "black_swallowtail/swa006.jpg",
+      "question": "swa006.jpg",
       "choice": ""
     }
   },
@@ -74,7 +74,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "black_swallowtail/swa024.jpg",
+      "question": "swa024.jpg",
       "choice": ""
     }
   },
@@ -83,7 +83,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea021.jpg",
+      "question": "pea021.jpg",
       "choice": ""
     }
   },
@@ -92,7 +92,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno040.jpg",
+      "question": "mno040.jpg",
       "choice": ""
     }
   },
@@ -101,7 +101,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea035.jpg",
+      "question": "pea035.jpg",
       "choice": ""
     }
   },
@@ -110,7 +110,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "black_swallowtail/swa016.jpg",
+      "question": "swa016.jpg",
       "choice": ""
     }
   },
@@ -119,7 +119,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno002.jpg",
+      "question": "mno002.jpg",
       "choice": ""
     }
   },
@@ -128,7 +128,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "machaon/mch038.jpg",
+      "question": "mch038.jpg",
       "choice": ""
     }
   },
@@ -137,7 +137,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "zebra/zeb025.jpg",
+      "question": "zeb025.jpg",
       "choice": ""
     }
   },
@@ -146,7 +146,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "black_swallowtail/swa010.jpg",
+      "question": "swa010.jpg",
       "choice": ""
     }
   },
@@ -155,7 +155,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea029.jpg",
+      "question": "pea029.jpg",
       "choice": ""
     }
   },
@@ -164,7 +164,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_closed/mnc023.jpg",
+      "question": "mnc023.jpg",
       "choice": ""
     }
   },
@@ -173,7 +173,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm025.jpg",
+      "question": "adm025.jpg",
       "choice": ""
     }
   },
@@ -182,7 +182,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno019.jpg",
+      "question": "mno019.jpg",
       "choice": ""
     }
   },
@@ -191,7 +191,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno039.jpg",
+      "question": "mno039.jpg",
       "choice": ""
     }
   },
@@ -200,7 +200,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "black_swallowtail/swa032.jpg",
+      "question": "swa032.jpg",
       "choice": ""
     }
   },
@@ -209,7 +209,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm040.jpg",
+      "question": "adm040.jpg",
       "choice": ""
     }
   },
@@ -218,7 +218,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm040.jpg",
+      "question": "adm040.jpg",
       "choice": ""
     }
   },
@@ -227,7 +227,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm038.jpg",
+      "question": "adm038.jpg",
       "choice": ""
     }
   },
@@ -236,7 +236,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "zebra/zeb018.jpg",
+      "question": "zeb018.jpg",
       "choice": ""
     }
   },
@@ -245,7 +245,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_closed/mnc027.jpg",
+      "question": "mnc027.jpg",
       "choice": ""
     }
   },
@@ -254,7 +254,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm010.jpg",
+      "question": "adm010.jpg",
       "choice": ""
     }
   },
@@ -263,7 +263,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno003.jpg",
+      "question": "mno003.jpg",
       "choice": ""
     }
   },
@@ -272,7 +272,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm030.jpg",
+      "question": "adm030.jpg",
       "choice": ""
     }
   },
@@ -281,7 +281,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea016.jpg",
+      "question": "pea016.jpg",
       "choice": ""
     }
   },
@@ -290,7 +290,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm012.jpg",
+      "question": "adm012.jpg",
       "choice": ""
     }
   },
@@ -299,7 +299,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno007.jpg",
+      "question": "mno007.jpg",
       "choice": ""
     }
   },
@@ -308,7 +308,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_closed/mnc039.jpg",
+      "question": "mnc039.jpg",
       "choice": ""
     }
   },
@@ -317,7 +317,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea033.jpg",
+      "question": "pea033.jpg",
       "choice": ""
     }
   },
@@ -326,7 +326,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea005.jpg",
+      "question": "pea005.jpg",
       "choice": ""
     }
   },
@@ -335,7 +335,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm028.jpg",
+      "question": "adm028.jpg",
       "choice": ""
     }
   },
@@ -344,7 +344,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_closed/mnc013.jpg",
+      "question": "mnc013.jpg",
       "choice": ""
     }
   },
@@ -353,7 +353,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm028.jpg",
+      "question": "adm028.jpg",
       "choice": ""
     }
   },
@@ -362,7 +362,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "zebra/zeb017.jpg",
+      "question": "zeb017.jpg",
       "choice": ""
     }
   },
@@ -371,7 +371,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "zebra/zeb025.jpg",
+      "question": "zeb025.jpg",
       "choice": ""
     }
   },
@@ -380,7 +380,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_closed/mnc040.jpg",
+      "question": "mnc040.jpg",
       "choice": ""
     }
   },
@@ -389,7 +389,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno036.jpg",
+      "question": "mno036.jpg",
       "choice": ""
     }
   },
@@ -398,7 +398,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm035.jpg",
+      "question": "adm035.jpg",
       "choice": ""
     }
   },
@@ -407,7 +407,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea029.jpg",
+      "question": "pea029.jpg",
       "choice": ""
     }
   },
@@ -416,7 +416,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea020.jpg",
+      "question": "pea020.jpg",
       "choice": ""
     }
   },
@@ -425,7 +425,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea016.jpg",
+      "question": "pea016.jpg",
       "choice": ""
     }
   },
@@ -434,7 +434,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "peacock/pea024.jpg",
+      "question": "pea024.jpg",
       "choice": ""
     }
   },
@@ -443,7 +443,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "machaon/mch032.jpg",
+      "question": "mch032.jpg",
       "choice": ""
     }
   },
@@ -452,7 +452,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "admiral/adm024.jpg",
+      "question": "adm024.jpg",
       "choice": ""
     }
   },
@@ -461,457 +461,7 @@
     "model": "accounts.task",
     "fields": {
       "batch": 1,
-      "question": "monarch_open/mno033.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 51,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "admiral/adm005.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 52,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch017.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 53,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea018.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 54,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_open/mno002.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 55,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb018.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 56,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "black_swallowtail/swa033.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 57,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc022.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 58,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb018.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 59,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc023.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 60,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch027.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 61,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_open/mno034.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 62,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc040.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 63,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb021.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 64,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea028.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 65,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc001.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 66,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb030.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 67,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "black_swallowtail/swa013.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 68,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "admiral/adm001.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 69,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc038.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 70,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_open/mno007.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 71,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch004.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 72,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea026.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 73,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "black_swallowtail/swa005.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 74,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb012.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 75,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch041.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 76,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb014.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 77,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb001.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 78,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc038.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 79,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc009.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 80,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "black_swallowtail/swa004.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 81,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc015.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 82,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "admiral/adm012.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 83,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "admiral/adm035.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 84,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_open/mno017.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 85,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch027.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 86,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea035.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 87,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb006.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 88,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch028.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 89,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "admiral/adm011.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 90,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch012.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 91,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea041.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 92,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "admiral/adm039.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 93,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "black_swallowtail/swa016.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 94,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "machaon/mch011.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 95,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "black_swallowtail/swa020.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 96,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "zebra/zeb040.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 97,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea004.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 98,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc024.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 99,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "monarch_closed/mnc001.jpg",
-      "choice": ""
-    }
-  },
-  {
-    "pk": 100,
-    "model": "accounts.task",
-    "fields": {
-      "batch": 1,
-      "question": "peacock/pea021.jpg",
+      "question": "mno033.jpg",
       "choice": ""
     }
   }
