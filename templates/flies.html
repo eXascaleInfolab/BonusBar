@@ -10,7 +10,7 @@
           $(this).button('loading');
           $(this).attr('disabled', 'disabled');
           $.ajax({
-            url: "{% url "submit" batch.id %}",
+            url: "{% url "submit" task.id %}",
             type: "POST"
           }).always(function() {
             $("#mturk_form").submit();
