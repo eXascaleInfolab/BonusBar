@@ -24,7 +24,7 @@ import ast
 # Core method
 def work(request,task_id):
     num_users = UserProfile.objects.count();
-    if num_users >= 60:
+    if num_users >= 120:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "giving !!!!!!"
     # Some user management with mturk
@@ -166,7 +166,7 @@ def submit(request, task_id):
 
 def welcome(request):
     num_users = UserProfile.objects.count();
-    if num_users >= 60:
+    if num_users >= 120:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "welcome ! "
     batch = Batch.objects.get(id=1)
